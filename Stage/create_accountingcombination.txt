@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS ARIBA_STAGE.AccountingCombination;
+
+CREATE TABLE ARIBA_STAGE.AccountingCombination 
+(
+  Account            VARCHAR(50),
+  CombinationGroup   VARCHAR(50),
+  Company            VARCHAR(50),
+  CostCenter         VARCHAR(50),
+  Product            VARCHAR(50),
+  Project            VARCHAR(50),
+  Region             VARCHAR(50),
+  SubAccount         VARCHAR(50),
+  UniqueName         VARCHAR(50)  NOT NULL
+)DISTSTYLE ALL;
+
+COMMIT;

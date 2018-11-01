@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS ARIBA_STAGE.account;
+
+CREATE TABLE ARIBA_STAGE.account 
+(
+  UniqueName        VARCHAR(50) NOT NULL,
+  name              VARCHAR(100),
+  description       VARCHAR(255),
+  purchasingunits   VARCHAR(100)
+)
+DISTSTYLE ALL;
+
+COMMIT;

@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS ariba_stage.address CASCADE;
+
+CREATE TABLE ariba_stage.address
+(
+   UniqueName   varchar(50) NOT NULL,
+   Name			varchar(128),
+   Lines			varchar(1024),
+   Line2		varchar(100),
+   Line3		varchar(100),
+   city         varchar(50),
+   state        varchar(50),
+   statecode    varchar(50),
+   postalcode  varchar(50),
+   country      varchar(50),
+   Phone 		varchar(70),
+   Fax			varchar(70),
+   Email 		varchar(100),
+   URL			varchar(100),
+   BillTo 		varchar(50),
+   ShipTo 		varchar(50),
+   PurchasingUnit varchar(50)
+
+)DISTSTYLE ALL;
+
+COMMIT;
